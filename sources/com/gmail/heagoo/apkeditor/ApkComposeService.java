@@ -4,11 +4,12 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.content.pm.ServiceInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.IBinder;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 import com.android.apksig.apk.ApkUtils;
 import com.gmail.heagoo.apkeditor.p090a.InterfaceC1108d;
 import com.gmail.heagoo.apkeditor.pro.R;
@@ -52,7 +53,6 @@ public class ApkComposeService extends Service implements InterfaceC1561j {
 
     /* JADX INFO: renamed from: g */
     private Map f2862g;
-
     /* JADX INFO: renamed from: h */
     private Map f2863h;
 
@@ -64,7 +64,6 @@ public class ApkComposeService extends Service implements InterfaceC1561j {
 
     /* JADX INFO: renamed from: k */
     private String f2866k;
-
     /* JADX INFO: renamed from: l */
     private AbstractC1181bz f2867l;
 
@@ -167,18 +166,25 @@ public class ApkComposeService extends Service implements InterfaceC1561j {
         Intent intent = new Intent(this, (Class<?>) ApkComposeActivity.class);
         intent.setAction("com.gmail.heagoo.action.apkcompose");
         intent.setFlags(131072);
-        PendingIntent activity = PendingIntent.getActivity(this, 0, intent, 0);
+        PendingIntent activity = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
         int iIntValue = ((Integer) C1067a.m2452a("com.gmail.heagoo.seticon.SetIcon", "getIconId", (Class[]) null, (Object[]) null)).intValue();
         Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(getResources(), iIntValue);
         String string = getString(R.string.app_name);
         this.f2871p = (NotificationManager) getSystemService("notification");
         if (Build.VERSION.SDK_INT >= 26) {
-            this.f2872q = new NotificationCompat.Builder(this, "default");
+            this.f2872q = new NotificationCompat.Builder(this, "apk_channel");
         } else {
             this.f2872q = new NotificationCompat.Builder(this);
         }
         this.f2872q.setContentTitle(string).setTicker(string).setContentText(getString(R.string.build_ongoing)).setSmallIcon(iIntValue).setLargeIcon(Bitmap.createScaledBitmap(bitmapDecodeResource, 128, 128, false)).setContentIntent(activity).setOngoing(true);
-        startForeground(8001, this.f2872q.build());
+
+        // اصلاح startForeground برای اندروید ۱۴+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            // برای Android 14+ (API 34) باید foregroundServiceType رو مشخص کنیم
+            startForeground(8001, this.f2872q.build(), ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+        } else {
+            startForeground(8001, this.f2872q.build());
+        }
         this.f2873r = true;
     }
 
@@ -264,6 +270,18 @@ public class ApkComposeService extends Service implements InterfaceC1561j {
     @Override // android.app.Service
     public void onCreate() {
         super.onCreate();
+        // ایجاد کانال اعلان برای اندروید ۸+ (نیاز به NotificationChannel)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            android.app.NotificationChannel channel = new android.app.NotificationChannel(
+                    "apk_channel",
+                    "APK Editor Service",
+                    android.app.NotificationManager.IMPORTANCE_LOW
+            );
+            android.app.NotificationManager manager = (android.app.NotificationManager) getSystemService(android.app.NotificationManager.class);
+            if (manager != null) {
+                manager.createNotificationChannel(channel);
+            }
+        }
     }
 
     @Override // android.app.Service

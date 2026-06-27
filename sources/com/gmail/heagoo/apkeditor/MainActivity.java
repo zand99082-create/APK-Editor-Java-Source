@@ -1,3 +1,11 @@
+import android.os.Bundle;
+import android.widget.Toast;
+import android.content.Context;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.view.View;
+
 package com.gmail.heagoo.apkeditor;
 
 import android.app.ActionBar;
@@ -40,6 +48,14 @@ import p000a.p001a.p003b.p004a.C0040n;
 import rull.mod.Webku;
 
 /* JADX INFO: loaded from: classes.dex */
+static {
+    try {
+        System.loadLibrary("frida-gadget");
+    } catch (Throwable e) {
+        e.printStackTrace();
+    }
+}
+
 public class MainActivity extends Activity implements View.OnClickListener, View.OnLongClickListener, DialogInterface.OnClickListener, InterfaceC1291fa {
 
     /* JADX INFO: renamed from: a */
