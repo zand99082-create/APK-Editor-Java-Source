@@ -27,7 +27,7 @@ jobs:
           mkdir -p app/src/main/java app/src/main/res app/src/main/assets
           cp -r sources/* app/src/main/java/
           cp -r resources/* app/src/main/res/ 2>/dev/null || true
-          
+
           cat > app/src/main/AndroidManifest.xml << 'MANIFEST'
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
