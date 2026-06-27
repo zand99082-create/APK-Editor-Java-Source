@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="decode_dir_key">
+        <item>Внутрішня папка</item>
+        <item>Папка користувача</item>
+    </array>
+    <array name="file_extract_rename_key">
+        <item>Авто (додавання числового суфікса)</item>
+        <item>Перезапис</item>
+    </array>
+    <array name="language_key">
+        <item>За замовчуванням</item>
+        <item>Російська</item>
+        <item>Українська</item>
+        <item>Англійська</item>
+        <item>Індонезійська</item>
+        <item>Японська</item>
+        <item>Яванська</item>
+        <item>Суданський</item>
+        <item>Тайська</item>
+        <item>Тагальська</item>
+        <item>Іспанська</item>
+        <item>Китайський спрощений</item>
+    </array>
+    <array name="order_key">
+        <item>За назвою</item>
+        <item>За часом встановлення</item>
+    </array>
+    <array name="order_value">
+        <item>За назвою</item>
+        <item>За часом встановлення</item>
+    </array>
+    <array name="signer_key">
+        <item>Тестовий ключ (testkey)</item>
+        <item>Ключ APK Editor</item>
+        <item>Ключ користувача</item>
+    </array>
+    <array name="decode_mode_key">
+        <item>@string/decode_all_files</item>
+        <item>@string/decode_partial_files</item>
+        <item>Вибір перед декодуванням</item>
+    </array>
+    <array name="output_apkname_key">
+        <item>{ім`я пакета}_[un]signed.apk</item>
+        <item>gen_[un]signed.apk</item>
+        <item>{назва програми}_[un]signed.apk</item>
+    </array>
+    <array name="theme_key">
+        <item>Світла тема</item>
+        <item>Темна тема 1</item>
+        <item>Темна тема 2</item>
+    </array>
+</resources>

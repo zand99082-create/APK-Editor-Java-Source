@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/md_box_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:textColor="@color/md_accent_color"
+            android:text="@string/md_str_help_19"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:textColor="@color/md_accent_color"
+            android:text="@string/md_str_help_20"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:textColor="@color/md_accent_color"
+            android:text="API"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="10.0"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Android 10"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="29"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="9"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Pie"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="28"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="8.1"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Oreo MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="27"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="8.0"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Oreo"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="26"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="7.1.1, 7.1"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Nougat MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="25"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="7.0"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Nougat"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="24"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="6.0"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Marshmallow"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="23"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="5.1"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Lollipop MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="22"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="5.0"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Lollipop"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="21"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="4.4W"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Kitkat Watch"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="20"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="4.4"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Kitkat"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="19"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="4.3"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Jelly Bean MR2"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="18"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="4.2, 4.2.2"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Jelly Bean MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="17"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="4.1, 4.1.1"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Jelly Bean"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="16"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="4.0.3, 4.0.4"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Ice Cream Sandwich MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="15"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="4.0, 4.0.1, 4.0.2"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Ice Cream Sandwich"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="14"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="3.2"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Honeycomb MR2"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="13"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="3.1.x"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Honeycomb MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="12"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="3.0.x"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Honeycomb"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="11"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="2.3.4, 2.3.3"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Gingerbread MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="10"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="2.3.2, 2.3.2, 2.3"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Gingerbread"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="9"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="2.2.x"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Froyo"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="8"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="2.1.x"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Eclair MR1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="7"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="2.0.1"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Eclair 0_1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="6"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="2.0"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Eclair"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="5"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="1.6"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Donut"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="4"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="1.5"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Cupcake"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="3"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="1.1"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Base 1_1"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="2"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+    <View style="@style/MD.DividerHorizontal"/>
+    <LinearLayout style="@style/MD.Table">
+        <TextView
+            android:text="1.0"
+            style="@style/MD.TableAndroid"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="Base"
+            style="@style/MD.TableName"/>
+        <View style="@style/MD.DividerVertical"/>
+        <TextView
+            android:text="1"
+            style="@style/MD.TableAPI"/>
+    </LinearLayout>
+</LinearLayout>

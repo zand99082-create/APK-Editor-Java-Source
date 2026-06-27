@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="ui_stat">false</bool>
+    <bool name="ui_nav">false</bool>
+    <bool name="md_selected_all_text">false</bool>
+    <bool name="qs_tile_service_availability">false</bool>
+    <bool name="use_accessibility_service">false</bool>
+    <bool name="use_watching_service">true</bool>
+</resources>

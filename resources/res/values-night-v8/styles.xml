@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MD.DayNight.NoActionBar" parent="@style/MD.Dark.NoActionBar">
+    </style>
+    <style name="MD.DayNight" parent="@style/MD.Dark">
+    </style>
+    <style name="MD.DayNight.Main" parent="@style/MD.Dark.Main">
+    </style>
+    <style name="masrullch" parent="@style/MD.Dark.NoActionBar">
+        <item name="android:windowBackground">@color/dark_window</item>
+        <item name="android:windowAnimationStyle">@style/MD.Q.Animation</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:actionBarStyle">@style/MD.Toolbar</item>
+        <item name="android:dialogTheme">@style/MD.Dialog.Dark</item>
+        <item name="android:alertDialogTheme">@style/MD.AlertDialog.Dark</item>
+        <item name="android:colorControlHighlight">@color/dark_ripple</item>
+        <item name="android:actionBarTheme">@style/MD.Home</item>
+        <item name="android:colorPrimary">@color/dark_actbar</item>
+        <item name="android:colorPrimaryDark">@color/dark_statbar</item>
+        <item name="android:colorAccent">@color/dark_accent</item>
+        <item name="android:actionOverflowMenuStyle">@style/MD.PopupMenu</item>
+        <item name="android:statusBarColor">@color/dark_statbar</item>
+        <item name="android:navigationBarColor">@color/dark_navbar</item>
+    </style>
+</resources>

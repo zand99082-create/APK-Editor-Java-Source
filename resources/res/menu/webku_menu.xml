@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_setting"
+        android:id="@+id/websetting"
+        android:tint="?attr/iconPrimary"
+        android:title="@string/web_setting_header"
+        android:showAsAction="ifRoom"/>
+</menu>

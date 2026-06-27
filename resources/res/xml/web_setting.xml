@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="Web Setting">
+    <EditTextPreference
+        android:layout="@layout/mtrl_pref_item"
+        android:title="@string/web_url"
+        android:key="MasrullUrl"
+        android:summary="@string/web_url_summary"
+        android:defaultValue="www.google.com/"/>
+    <EditTextPreference
+        android:layout="@layout/mtrl_pref_item"
+        android:title="@string/path_download"
+        android:key="changestorage"
+        android:summary="@string/path_download_summary"
+        android:defaultValue="ApkEditor/download/"/>
+</PreferenceScreen>

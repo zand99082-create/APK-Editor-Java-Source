@@ -1,0 +1,57 @@
+package com.github.megatronking.stringfog.xor;
+
+import android.util.Base64;
+import com.github.megatronking.stringfog.IStringFog;
+import java.io.UnsupportedEncodingException;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class StringFogImpl implements IStringFog {
+    public static final String CHARSET_NAME_UTF_8 = "UTF-8";
+
+    public static String decrypt(String str) {
+        return new StringFogImpl().decrypt(str, CHARSET_NAME_UTF_8);
+    }
+
+    private static byte[] xor(byte[] bArr, String str) {
+        int length = bArr.length;
+        int length2 = str.length();
+        int i = 0;
+        int i2 = 0;
+        while (i < length) {
+            if (i2 >= length2) {
+                i2 = 0;
+            }
+            bArr[i] = (byte) (bArr[i] ^ str.charAt(i2));
+            i++;
+            i2++;
+        }
+        return bArr;
+    }
+
+    @Override // com.github.megatronking.stringfog.IStringFog
+    public String decrypt(String str, String str2) {
+        String str3;
+        try {
+            str3 = new String(xor(Base64.decode(str, 2), str2), CHARSET_NAME_UTF_8);
+        } catch (UnsupportedEncodingException e) {
+            str3 = new String(xor(Base64.decode(str, 2), str2));
+        }
+        return str3;
+    }
+
+    @Override // com.github.megatronking.stringfog.IStringFog
+    public String encrypt(String str, String str2) {
+        String str3;
+        try {
+            str3 = new String(Base64.encode(xor(str.getBytes(CHARSET_NAME_UTF_8), str2), 2));
+        } catch (UnsupportedEncodingException e) {
+            str3 = new String(Base64.encode(xor(str.getBytes(), str2), 2));
+        }
+        return str3;
+    }
+
+    @Override // com.github.megatronking.stringfog.IStringFog
+    public boolean overflow(String str, String str2) {
+        return str != null && (str.length() * 4) / 3 >= 65535;
+    }
+}
