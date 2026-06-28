@@ -19,19 +19,13 @@ jobs:
 
       - name: Install Apktool
         run: |
-          wget -O apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_3.0.2.jar
+          # دانلود از لینک جدید گیت‌هاب
+          wget -O apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.9.3/apktool_2.9.3.jar
           echo '#!/bin/bash' > apktool
           echo 'java -jar $PWD/apktool.jar "$@"' >> apktool
           chmod +x apktool
           sudo mv apktool /usr/local/bin/
           sudo mv apktool.jar /usr/local/bin/
-
-      - name: Decode APK (if needed)
-        run: |
-          # اینجا از پوشه‌های smali که قبلاً داری استفاده میکنیم
-          # برای تست، یه فایل دامی درست میکنیم تا خطا نده
-          mkdir -p app/build/outputs/apk/debug/
-          echo "APK will be built from existing smali" > app/build/outputs/apk/debug/test.txt
 
       - name: Rebuild APK
         run: |
